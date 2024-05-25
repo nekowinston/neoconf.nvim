@@ -117,19 +117,6 @@ function M.get_schema(schema)
   return ret
 end
 
-function M.clean()
-  ---@diagnostic disable-next-line: param-type-mismatch
-  for _, f in pairs(vim.fn.expand("schemas/*.json", false, true)) do
-    vim.loop.fs_unlink(f)
-  end
-end
-
-function M.update_index()
-  local url = "https://gist.githubusercontent.com/williamboman/a01c3ce1884d4b57cc93422e7eae7702/raw/lsp-packages.json"
-  local index = Util.fetch(url)
-  Util.write_file("schemas/index.json", index)
-end
-
 function M.update_schemas()
   local index = require("neoconf.build.schemas").index()
   local names = vim.tbl_keys(index)
@@ -148,8 +135,6 @@ function M.update_schemas()
 end
 
 function M.build()
-  M.clean()
-  M.update_index()
   M.update_schemas()
 end
 
