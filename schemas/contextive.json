@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Supports developers where a complex domain or project specific language is in use by surfacing definitions everywhere specific words are used - code, comments, config or documentation.",
+  "properties": {
+    "contextive.path": {
+      "default": ".contextive/definitions.yml",
+      "description": "Path to the Contextive Definitions File",
+      "type": "string"
+    }
+  }
+}

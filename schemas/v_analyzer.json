@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "V language support (syntax highlighting, formatter, language server) for Visual Studio Code.",
+  "properties": {
+    "v-analyzer.connectionMode": {
+      "default": "stdio",
+      "description": "Specify the mode to be used when connecting to v-analyzer.",
+      "enum": [
+        "stdio",
+        "tcp"
+      ],
+      "enumDescriptions": [
+        "Connects to the language server via standard input/output. (Default)",
+        "Connects to the language server via TCP (you need to run analyzer manually with `--socket` flag, debug only!)."
+      ],
+      "scope": "resource",
+      "type": "string"
+    },
+    "v-analyzer.customArgs": {
+      "description": "Custom arguments to be passed to the v-analyzer executable.",
+      "scope": "resource",
+      "type": "string"
+    },
+    "v-analyzer.customVrootPath": {
+      "default": "",
+      "description": "Custom path to the V installation directory (VROOT).\nNOTE: Setting this won't change the V compiler executable to be used.",
+      "scope": "resource",
+      "type": "string"
+    },
+    "v-analyzer.serverPath": {
+      "default": "",
+      "description": "Custom path to the v-analyzer executable (if empty uses `v-analyzer` executable from PATH).",
+      "scope": "resource",
+      "type": "string"
+    },
+    "v-analyzer.tcpMode.port": {
+      "default": 5007,
+      "description": "Port to be used when connecting to the language server. (Only in TCP mode)",
+      "scope": "resource",
+      "type": "number"
+    },
+    "v.executablePath": {
+      "description": "Custom path to the V compiler executable (`v`).\nNOTE: Setting this won't change the VROOT path in v-analyzer.",
+      "scope": "resource",
+      "type": "string"
+    }
+  }
+}

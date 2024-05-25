@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Full support for @use and @forward, including aliases, prefixes and hiding. Rich documentation through SassDoc. Workspace-wide code navigation and refactoring.",
+  "properties": {
+    "somesass.scanImportedFiles": {
+      "default": true,
+      "deprecationMessage": "Will be removed at some point after `@import` becomes CSS-only.",
+      "description": "Allows scan imported files. Turning this off will severely limit functionality, and is not recommended.",
+      "type": "boolean"
+    },
+    "somesass.scannerDepth": {
+      "default": 30,
+      "description": "The maximum number of nested directories to scan.",
+      "type": "number"
+    },
+    "somesass.scannerExclude": {
+      "default": [
+        "**/.git/**",
+        "**/node_modules/**",
+        "**/bower_components/**"
+      ],
+      "description": "List of glob patterns for directories that are excluded when scanning.",
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "somesass.suggestAllFromOpenDocument": {
+      "default": false,
+      "description": "VS Code has built-in code suggestions for symbols declared in the open document. If you prefer the suggestions from Some Sass, you can opt in by turning on this setting. There will be duplicates.",
+      "type": "boolean"
+    },
+    "somesass.suggestFromUseOnly": {
+      "default": false,
+      "description": "If your project uses the new module system with @use and @forward, you may want to only include suggestions from your used modules.",
+      "type": "boolean"
+    },
+    "somesass.suggestFunctionsInStringContextAfterSymbols": {
+      "default": " (+-*%",
+      "description": "Allows prompt Functions in String context after specified symbols.",
+      "type": "string"
+    },
+    "somesass.suggestionStyle": {
+      "default": "all",
+      "description": "Controls the style of suggestions for mixins and placeholders.",
+      "enum": [
+        "all",
+        "nobracket",
+        "bracket"
+      ],
+      "enumDescriptions": [
+        "Show all suggestions",
+        "Only show suggestions without brackets",
+        "Where brackets are suggested, omit duplicates without brackets"
+      ],
+      "enumItemLabels": [
+        "All",
+        "No brackets",
+        "Only brackets"
+      ],
+      "type": "string"
+    }
+  }
+}

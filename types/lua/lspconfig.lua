@@ -33,11 +33,19 @@ lspconfig.astro = {
   setup = function(options) end,
 }
 
----@class lspconfig.options.awkls: _.lspconfig.options
----@field settings lspconfig.settings.awkls
+---@class lspconfig.options.awk_ls: _.lspconfig.options
+---@field settings lspconfig.settings.awk_ls
 
-lspconfig.awkls = {
-  ---@param options lspconfig.options.awkls
+lspconfig.awk_ls = {
+  ---@param options lspconfig.options.awk_ls
+  setup = function(options) end,
+}
+
+---@class lspconfig.options.basedpyright: _.lspconfig.options
+---@field settings lspconfig.settings.basedpyright
+
+lspconfig.basedpyright = {
+  ---@param options lspconfig.options.basedpyright
   setup = function(options) end,
 }
 
@@ -49,6 +57,14 @@ lspconfig.bashls = {
   setup = function(options) end,
 }
 
+---@class lspconfig.options.biome: _.lspconfig.options
+---@field settings lspconfig.settings.biome
+
+lspconfig.biome = {
+  ---@param options lspconfig.options.biome
+  setup = function(options) end,
+}
+
 ---@class lspconfig.options.clangd: _.lspconfig.options
 ---@field settings lspconfig.settings.clangd
 
@@ -57,19 +73,19 @@ lspconfig.clangd = {
   setup = function(options) end,
 }
 
+---@class lspconfig.options.contextive: _.lspconfig.options
+---@field settings lspconfig.settings.contextive
+
+lspconfig.contextive = {
+  ---@param options lspconfig.options.contextive
+  setup = function(options) end,
+}
+
 ---@class lspconfig.options.cssls: _.lspconfig.options
 ---@field settings lspconfig.settings.cssls
 
 lspconfig.cssls = {
   ---@param options lspconfig.options.cssls
-  setup = function(options) end,
-}
-
----@class lspconfig.options.dartls: _.lspconfig.options
----@field settings lspconfig.settings.dartls
-
-lspconfig.dartls = {
-  ---@param options lspconfig.options.dartls
   setup = function(options) end,
 }
 
@@ -97,6 +113,14 @@ lspconfig.elmls = {
   setup = function(options) end,
 }
 
+---@class lspconfig.options.elp: _.lspconfig.options
+---@field settings lspconfig.settings.elp
+
+lspconfig.elp = {
+  ---@param options lspconfig.options.elp
+  setup = function(options) end,
+}
+
 ---@class lspconfig.options.eslint: _.lspconfig.options
 ---@field settings lspconfig.settings.eslint
 
@@ -105,11 +129,11 @@ lspconfig.eslint = {
   setup = function(options) end,
 }
 
----@class lspconfig.options.flow: _.lspconfig.options
----@field settings lspconfig.settings.flow
+---@class lspconfig.options.facility_language_server: _.lspconfig.options
+---@field settings lspconfig.settings.facility_language_server
 
-lspconfig.flow = {
-  ---@param options lspconfig.options.flow
+lspconfig.facility_language_server = {
+  ---@param options lspconfig.options.facility_language_server
   setup = function(options) end,
 }
 
@@ -126,30 +150,6 @@ lspconfig.fsautocomplete = {
 
 lspconfig.grammarly = {
   ---@param options lspconfig.options.grammarly
-  setup = function(options) end,
-}
-
----@class lspconfig.options.haxe_language_server: _.lspconfig.options
----@field settings lspconfig.settings.haxe_language_server
-
-lspconfig.haxe_language_server = {
-  ---@param options lspconfig.options.haxe_language_server
-  setup = function(options) end,
-}
-
----@class lspconfig.options.hhvm: _.lspconfig.options
----@field settings lspconfig.settings.hhvm
-
-lspconfig.hhvm = {
-  ---@param options lspconfig.options.hhvm
-  setup = function(options) end,
-}
-
----@class lspconfig.options.hie: _.lspconfig.options
----@field settings lspconfig.settings.hie
-
-lspconfig.hie = {
-  ---@param options lspconfig.options.hie
   setup = function(options) end,
 }
 
@@ -241,27 +241,11 @@ lspconfig.omnisharp = {
   setup = function(options) end,
 }
 
----@class lspconfig.options.perlls: _.lspconfig.options
----@field settings lspconfig.settings.perlls
-
-lspconfig.perlls = {
-  ---@param options lspconfig.options.perlls
-  setup = function(options) end,
-}
-
 ---@class lspconfig.options.perlnavigator: _.lspconfig.options
 ---@field settings lspconfig.settings.perlnavigator
 
 lspconfig.perlnavigator = {
   ---@param options lspconfig.options.perlnavigator
-  setup = function(options) end,
-}
-
----@class lspconfig.options.perlpls: _.lspconfig.options
----@field settings lspconfig.settings.perlpls
-
-lspconfig.perlpls = {
-  ---@param options lspconfig.options.perlpls
   setup = function(options) end,
 }
 
@@ -329,14 +313,6 @@ lspconfig.rescriptls = {
   setup = function(options) end,
 }
 
----@class lspconfig.options.rls: _.lspconfig.options
----@field settings lspconfig.settings.rls
-
-lspconfig.rls = {
-  ---@param options lspconfig.options.rls
-  setup = function(options) end,
-}
-
 ---@class lspconfig.options.rome: _.lspconfig.options
 ---@field settings lspconfig.settings.rome
 
@@ -361,11 +337,11 @@ lspconfig.solargraph = {
   setup = function(options) end,
 }
 
----@class lspconfig.options.solidity_ls: _.lspconfig.options
----@field settings lspconfig.settings.solidity_ls
+---@class lspconfig.options.some-sass-language-server: _.lspconfig.options
+---@field settings lspconfig.settings.some-sass-language-server
 
-lspconfig.solidity_ls = {
-  ---@param options lspconfig.options.solidity_ls
+lspconfig.some-sass-language-server = {
+  ---@param options lspconfig.options.some-sass-language-server
   setup = function(options) end,
 }
 
@@ -377,11 +353,11 @@ lspconfig.sorbet = {
   setup = function(options) end,
 }
 
----@class lspconfig.options.sourcekit: _.lspconfig.options
----@field settings lspconfig.settings.sourcekit
+---@class lspconfig.options.sourcery: _.lspconfig.options
+---@field settings lspconfig.settings.sourcery
 
-lspconfig.sourcekit = {
-  ---@param options lspconfig.options.sourcekit
+lspconfig.sourcery = {
+  ---@param options lspconfig.options.sourcery
   setup = function(options) end,
 }
 
@@ -390,6 +366,14 @@ lspconfig.sourcekit = {
 
 lspconfig.spectral = {
   ---@param options lspconfig.options.spectral
+  setup = function(options) end,
+}
+
+---@class lspconfig.options.stimulus_ls: _.lspconfig.options
+---@field settings lspconfig.settings.stimulus_ls
+
+lspconfig.stimulus_ls = {
+  ---@param options lspconfig.options.stimulus_ls
   setup = function(options) end,
 }
 
@@ -425,11 +409,11 @@ lspconfig.tailwindcss = {
   setup = function(options) end,
 }
 
----@class lspconfig.options.terraformls: _.lspconfig.options
----@field settings lspconfig.settings.terraformls
+---@class lspconfig.options.terraform_lsp: _.lspconfig.options
+---@field settings lspconfig.settings.terraform_lsp
 
-lspconfig.terraformls = {
-  ---@param options lspconfig.options.terraformls
+lspconfig.terraform_lsp = {
+  ---@param options lspconfig.options.terraform_lsp
   setup = function(options) end,
 }
 
@@ -441,11 +425,19 @@ lspconfig.tsserver = {
   setup = function(options) end,
 }
 
----@class lspconfig.options.volar: _.lspconfig.options
----@field settings lspconfig.settings.volar
+---@class lspconfig.options.v_analyzer: _.lspconfig.options
+---@field settings lspconfig.settings.v_analyzer
 
-lspconfig.volar = {
-  ---@param options lspconfig.options.volar
+lspconfig.v_analyzer = {
+  ---@param options lspconfig.options.v_analyzer
+  setup = function(options) end,
+}
+
+---@class lspconfig.options.vetur: _.lspconfig.options
+---@field settings lspconfig.settings.vetur
+
+lspconfig.vetur = {
+  ---@param options lspconfig.options.vetur
   setup = function(options) end,
 }
 
@@ -457,19 +449,11 @@ lspconfig.vtsls = {
   setup = function(options) end,
 }
 
----@class lspconfig.options.vuels: _.lspconfig.options
----@field settings lspconfig.settings.vuels
+---@class lspconfig.options.wgsl_analyzer: _.lspconfig.options
+---@field settings lspconfig.settings.wgsl_analyzer
 
-lspconfig.vuels = {
-  ---@param options lspconfig.options.vuels
-  setup = function(options) end,
-}
-
----@class lspconfig.options.wgls_analyzer: _.lspconfig.options
----@field settings lspconfig.settings.wgls_analyzer
-
-lspconfig.wgls_analyzer = {
-  ---@param options lspconfig.options.wgls_analyzer
+lspconfig.wgsl_analyzer = {
+  ---@param options lspconfig.options.wgsl_analyzer
   setup = function(options) end,
 }
 
@@ -478,14 +462,6 @@ lspconfig.wgls_analyzer = {
 
 lspconfig.yamlls = {
   ---@param options lspconfig.options.yamlls
-  setup = function(options) end,
-}
-
----@class lspconfig.options.zeta_note: _.lspconfig.options
----@field settings lspconfig.settings.zeta_note
-
-lspconfig.zeta_note = {
-  ---@param options lspconfig.options.zeta_note
   setup = function(options) end,
 }
 
@@ -500,21 +476,21 @@ lspconfig.zls = {
 ---@class lspconfig.options
 ---@field als lspconfig.options.als
 ---@field astro lspconfig.options.astro
----@field awkls lspconfig.options.awkls
+---@field awk_ls lspconfig.options.awk_ls
+---@field basedpyright lspconfig.options.basedpyright
 ---@field bashls lspconfig.options.bashls
+---@field biome lspconfig.options.biome
 ---@field clangd lspconfig.options.clangd
+---@field contextive lspconfig.options.contextive
 ---@field cssls lspconfig.options.cssls
----@field dartls lspconfig.options.dartls
 ---@field denols lspconfig.options.denols
 ---@field elixirls lspconfig.options.elixirls
 ---@field elmls lspconfig.options.elmls
+---@field elp lspconfig.options.elp
 ---@field eslint lspconfig.options.eslint
----@field flow lspconfig.options.flow
+---@field facility_language_server lspconfig.options.facility_language_server
 ---@field fsautocomplete lspconfig.options.fsautocomplete
 ---@field grammarly lspconfig.options.grammarly
----@field haxe_language_server lspconfig.options.haxe_language_server
----@field hhvm lspconfig.options.hhvm
----@field hie lspconfig.options.hie
 ---@field html lspconfig.options.html
 ---@field intelephense lspconfig.options.intelephense
 ---@field java_language_server lspconfig.options.java_language_server
@@ -526,9 +502,7 @@ lspconfig.zls = {
 ---@field lua_ls lspconfig.options.lua_ls
 ---@field luau_lsp lspconfig.options.luau_lsp
 ---@field omnisharp lspconfig.options.omnisharp
----@field perlls lspconfig.options.perlls
 ---@field perlnavigator lspconfig.options.perlnavigator
----@field perlpls lspconfig.options.perlpls
 ---@field powershell_es lspconfig.options.powershell_es
 ---@field psalm lspconfig.options.psalm
 ---@field puppet lspconfig.options.puppet
@@ -537,46 +511,45 @@ lspconfig.zls = {
 ---@field pyright lspconfig.options.pyright
 ---@field r_language_server lspconfig.options.r_language_server
 ---@field rescriptls lspconfig.options.rescriptls
----@field rls lspconfig.options.rls
 ---@field rome lspconfig.options.rome
 ---@field rust_analyzer lspconfig.options.rust_analyzer
 ---@field solargraph lspconfig.options.solargraph
----@field solidity_ls lspconfig.options.solidity_ls
+---@field some-sass-language-server lspconfig.options.some-sass-language-server
 ---@field sorbet lspconfig.options.sorbet
----@field sourcekit lspconfig.options.sourcekit
+---@field sourcery lspconfig.options.sourcery
 ---@field spectral lspconfig.options.spectral
+---@field stimulus_ls lspconfig.options.stimulus_ls
 ---@field stylelint_lsp lspconfig.options.stylelint_lsp
 ---@field svelte lspconfig.options.svelte
 ---@field svlangserver lspconfig.options.svlangserver
 ---@field tailwindcss lspconfig.options.tailwindcss
----@field terraformls lspconfig.options.terraformls
+---@field terraform_lsp lspconfig.options.terraform_lsp
 ---@field tsserver lspconfig.options.tsserver
----@field volar lspconfig.options.volar
+---@field v_analyzer lspconfig.options.v_analyzer
+---@field vetur lspconfig.options.vetur
 ---@field vtsls lspconfig.options.vtsls
----@field vuels lspconfig.options.vuels
----@field wgls_analyzer lspconfig.options.wgls_analyzer
+---@field wgsl_analyzer lspconfig.options.wgsl_analyzer
 ---@field yamlls lspconfig.options.yamlls
----@field zeta_note lspconfig.options.zeta_note
 ---@field zls lspconfig.options.zls
 
 ---@class lspconfig.settings
 ---@field als lspconfig.settings.als
 ---@field astro lspconfig.settings.astro
----@field awkls lspconfig.settings.awkls
+---@field awk_ls lspconfig.settings.awk_ls
+---@field basedpyright lspconfig.settings.basedpyright
 ---@field bashls lspconfig.settings.bashls
+---@field biome lspconfig.settings.biome
 ---@field clangd lspconfig.settings.clangd
+---@field contextive lspconfig.settings.contextive
 ---@field cssls lspconfig.settings.cssls
----@field dartls lspconfig.settings.dartls
 ---@field denols lspconfig.settings.denols
 ---@field elixirls lspconfig.settings.elixirls
 ---@field elmls lspconfig.settings.elmls
+---@field elp lspconfig.settings.elp
 ---@field eslint lspconfig.settings.eslint
----@field flow lspconfig.settings.flow
+---@field facility_language_server lspconfig.settings.facility_language_server
 ---@field fsautocomplete lspconfig.settings.fsautocomplete
 ---@field grammarly lspconfig.settings.grammarly
----@field haxe_language_server lspconfig.settings.haxe_language_server
----@field hhvm lspconfig.settings.hhvm
----@field hie lspconfig.settings.hie
 ---@field html lspconfig.settings.html
 ---@field intelephense lspconfig.settings.intelephense
 ---@field java_language_server lspconfig.settings.java_language_server
@@ -588,9 +561,7 @@ lspconfig.zls = {
 ---@field lua_ls lspconfig.settings.lua_ls
 ---@field luau_lsp lspconfig.settings.luau_lsp
 ---@field omnisharp lspconfig.settings.omnisharp
----@field perlls lspconfig.settings.perlls
 ---@field perlnavigator lspconfig.settings.perlnavigator
----@field perlpls lspconfig.settings.perlpls
 ---@field powershell_es lspconfig.settings.powershell_es
 ---@field psalm lspconfig.settings.psalm
 ---@field puppet lspconfig.settings.puppet
@@ -599,26 +570,25 @@ lspconfig.zls = {
 ---@field pyright lspconfig.settings.pyright
 ---@field r_language_server lspconfig.settings.r_language_server
 ---@field rescriptls lspconfig.settings.rescriptls
----@field rls lspconfig.settings.rls
 ---@field rome lspconfig.settings.rome
 ---@field rust_analyzer lspconfig.settings.rust_analyzer
 ---@field solargraph lspconfig.settings.solargraph
----@field solidity_ls lspconfig.settings.solidity_ls
+---@field some-sass-language-server lspconfig.settings.some-sass-language-server
 ---@field sorbet lspconfig.settings.sorbet
----@field sourcekit lspconfig.settings.sourcekit
+---@field sourcery lspconfig.settings.sourcery
 ---@field spectral lspconfig.settings.spectral
+---@field stimulus_ls lspconfig.settings.stimulus_ls
 ---@field stylelint_lsp lspconfig.settings.stylelint_lsp
 ---@field svelte lspconfig.settings.svelte
 ---@field svlangserver lspconfig.settings.svlangserver
 ---@field tailwindcss lspconfig.settings.tailwindcss
----@field terraformls lspconfig.settings.terraformls
+---@field terraform_lsp lspconfig.settings.terraform_lsp
 ---@field tsserver lspconfig.settings.tsserver
----@field volar lspconfig.settings.volar
+---@field v_analyzer lspconfig.settings.v_analyzer
+---@field vetur lspconfig.settings.vetur
 ---@field vtsls lspconfig.settings.vtsls
----@field vuels lspconfig.settings.vuels
----@field wgls_analyzer lspconfig.settings.wgls_analyzer
+---@field wgsl_analyzer lspconfig.settings.wgsl_analyzer
 ---@field yamlls lspconfig.settings.yamlls
----@field zeta_note lspconfig.settings.zeta_note
 ---@field zls lspconfig.settings.zls
 
 
